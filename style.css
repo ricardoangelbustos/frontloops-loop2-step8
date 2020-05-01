@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f2f4f8;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    background-color: white;
+    width: 21%;
+    height: 500px;
+    margin: 70px auto;
+    border: 10px solid black;
+    border-radius: 45px;
+    overflow: hidden;
+}
+.blue{
+    background-color: #5288f4;
+    width: 180%;
+    height: 200px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    color:white;
+    position: relative;
+    bottom: 30px;
+    transform: rotate(30deg);
+}
+.black{
+    background-color: black;
+    width: 60%;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 207px;
+    border-radius: 10px;
+}
+h1{
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.another{
+    position: relative;
+    bottom: 190px;
+}
+.card{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 90%;
+}
+.options{
+    width: 100%;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+}
+.option{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.option img{
+    width: 6%;
+    margin-right: 5%;
+}
+.text{
+    width: 70%;
+}
+.text h2{
+    font-size: 13px;
+}
+.text p{
+    font-size: 11px;
+    color: #babfc4;
+}
+/*INICIA CSS DEL SWITCH*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+} 
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/*FINALIZA CSS DEL SWITCH*/
+@media (max-width: 1024px){
+    .container{
+        width: 26%;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 40%;
+    }
+}
+@media (max-width: 425px){
+    .container{
+        width: 80%;
+    }
+}
